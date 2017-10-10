@@ -1,0 +1,10 @@
+{
+  "test_dir": ["/home", "your", "project's", "test", "location"],
+  "truffle_dir": ["/home", "truffle"],
+  "build_dir": ["/home", "truffle", "build", "contracts"],
+  "test_marker": "Ͳ",
+  "testrpc_command": ["testrpc", "--network-id", "local_compooper"],
+  "truffle_network": "development",
+  "tests_to_run": null,
+  "clear_build_dir_on_test": true
+}

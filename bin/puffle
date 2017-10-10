@@ -1,0 +1,26 @@
+#!/usr/bin/env python3
+import os
+import json
+
+import puffle
+
+with open(os.path.join(os.path.dirname(__file__), 'puffle.json')) as jf:
+    params = json.load(jf)
+
+test_dir = os.path.join(*params["test_dir"])
+truffle_dir = os.path.join(*params["truffle_dir"])
+build_dir = os.path.join(*params["build_dir"])
+test_marker = params["test_marker"]
+testrpc_command = params["testrpc_command"]
+tests_to_run = params["tests_to_run"]
+truffle_network = params["truffle_network"]
+clear_build_dir = params["clear_build_dir_on_test"]
+
+puffle.run_tests(truffle_dir,
+                 test_dir,
+                 testrpc_command,
+                 test_marker,
+                 clear_builds=clear_build_dir,
+                 build_dir=build_dir,
+                 tests_to_run=tests_to_run,
+                 truffle_network=truffle_network)
