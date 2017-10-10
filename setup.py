@@ -6,4 +6,5 @@ setup(name='puffle',
       license='MIT',
       url='https://github.com/finres/puffle',
       py_modules=['puffle'],
+      version='0.01',
       scripts=['bin/puffle'])
