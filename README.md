@@ -4,7 +4,7 @@
 
 Puffle is a wrapper for running solidity tests in truffle on testrpc. Puffle runs each set of tests against a fresh instance of testrpc, such that modifications to your testrpc during your tests (like time) do not impact future tests in the same overall batch. (You can magic the testrpc blockchain forwards, but blockchains cannot go backwards!)
 
-You may configure your paths and options in `site-packages/puffle/bin/puffle.json`.
+
 
 ### Requirements
 
@@ -13,6 +13,14 @@ python > 3.x.x
 ### Instalation
 
 `pip3 install git+https://github.com/finres/puffle.git`
+
+You may configure your paths and options in `site-packages/puffle/bin/puffle.json`. An example config has been provided for you :)
+
+### Usage
+
+`$ puffle`
+
+That's it!
 
 ### Contributing
 
