@@ -6,6 +6,14 @@ Puffle is a wrapper for running solidity tests in truffle on testrpc. Puffle run
 
 You may configure your paths and options in `site-packages/puffle/bin/puffle.json`.
 
+### Requirements
+
+python > 3.x.x
+
+### Instalation
+
+`pip3 install git+https://github.com/finres/puffle.git`
+
 ### Contributing
 
 Contributions are welcome!
