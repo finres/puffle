@@ -1,11 +1,18 @@
 #!/usr/bin/env python3
 import os
+import sys
 import json
+
+try:
+    suite = sys.argv[1]
+except IndexError:
+    raise ValueError('Please provide a project name.')
 
 import puffle
 
 with open(os.path.join(os.path.dirname(__file__), 'puffle.json')) as jf:
-    params = json.load(jf)
+    j = json.load(jf)
+    params = j[suite]
 
 test_dir = os.path.join(*params["test_dir"])
 truffle_dir = os.path.join(*params["truffle_dir"])
